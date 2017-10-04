@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.demo.Rhyme">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_the_word_that_rhymes_with_old"
+        android:id="@+id/rhytext"
+        />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="mild"
+        android:textOff="mild"
+        android:id="@+id/mild"
+        android:layout_below="@id/rhytext"
+        />
+
+
+     <ToggleButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textOn="mold"
+         android:textOff="mold"
+         android:id="@+id/mold"
+         android:layout_below="@+id/mild"
+         />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="cat"
+        android:textOff="cat"
+        android:layout_below="@+id/mold"
+        android:id="@+id/cat"
+        />
+<ToggleButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textOn="On"
+    android:textOff="Off"
+    android:layout_below="@id/cat"
+    android:id="@+id/on"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter text"
+        android:id="@+id/space"
+        android:layout_below="@+id/on"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="speak"
+        android:id="@+id/btn_spk"
+        android:layout_below="@+id/space"
+        />
+</RelativeLayout>
